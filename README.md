@@ -1,13 +1,12 @@
-# (project title)
+# Model of Nutrition in underdeveloped countries in the African & South-American Continent
 
 <!-- intro + motivation -->
 
 ## Overview
 
 <!--
-  - question(s)
-  - audience
-  - call(s) to action
+  - Evaluate & Research the current state of Nutrition in South America and African Countries. Seeking how to mitigate undernourishment impact in vulnerable communities by seeking economic alternatives to attack hunger in those communities. 
+  - Search, Catalog & Model alternatives ways of gaining the necessary nutrients in order to have a fulfilling & healthy life.
 -->
 
 ## Domain & Data
