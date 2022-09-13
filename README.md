@@ -16,7 +16,7 @@ We want to know and understand the current state of affairs regarding food secur
   - possible short-comings in your model
 -->
 
-- Establiish a list with all food available in focalized parts of Africa & South-America and use the Knapsack Problem principle in order to provide a list of available alternatives for find a list of economic alternatives. 
+- Set up a list with all food available in focalized parts of Africa & South-America and use the Knapsack Problem principle in order to provide a list of available alternatives for find a list of economic alternatives. 
 
 ## Analysis & Results
 
