@@ -1,14 +1,18 @@
-# Model of Nutrition in underdeveloped countries in the African & South-American Continent
+# Website for UI & UR from Uruguay
 
-We want to know and understand the current state of affairs regarding food security in underdeveloped nations, we want to provide tools to vulnerable communities to research, design & execute a plan for providing better food security for themselves and their future generations. 
+We want to generate a website that showcase our abilities in code programming using Python. 
 
 ## Overview
 
-  - Evaluate & Research the current state of Nutrition in South America and African Countries. Seeking how to mitigate undernourishment impact in vulnerable communities by seeking economic alternatives to attack hunger in those communities. 
-  - Search, Catalog & Model alternatives ways of gaining the necessary nutrients in order to have a fulfilling & healthy life.
-  - Create a database of foods that share a similar nutritional value in order to create plans for focalized communities to attack malnournishment by providing a list of accesible alternative via data-driven decisions. 
+  - The idea is to use the tools provided by the MIT ReACT program during the first two edX courses of Python (using NumPy and Plotting)to create a website that shows the evolution of the UI & UR from the Uruguayan Goverment website. 
+  - This units: Unidad Indexada (UI) & Unidad Reajustable (UR) are common economic units that are used all over the world for bond emission by goverments. It's a way to add the impact of the inflation in the economy to a monetary tool for multiples purposes (Loans, penalties, etc). 
+  - The whole objetive is to code a website that shows the data provided free by the Uruguayan goverment, showcase a graphic representation of that data using Python and make an estimated projection on how that graph is going to change in the future. 
 
 ## Domain & Data
+
+  - The main data is the value of the unites provided by the official uruguayan central bank, that is posted daily from monday to friday since the year 2002. 
+  - Will use the NumPy library to code the linear regression of that data and make estimates on how is going to  behave into the future. 
+  - Will use Flask framework in order to create the website enviroment
 
 <!--
   - define domain of your project
@@ -16,10 +20,10 @@ We want to know and understand the current state of affairs regarding food secur
   - possible short-comings in your model
 -->
 
-- Set up a list with all food available in focalized parts of Africa & South-America and use the Knapsack Problem principle in order to provide a list of available alternatives for find a list of economic alternatives. 
 
 ## Analysis & Results
 
+  - The main results is to provide visual expression to the data and see if it got tendencies to keep growing over time. 
 <!--
   - how did you analyze the data
   - what were the results
@@ -27,6 +31,8 @@ We want to know and understand the current state of affairs regarding food secur
 -->
 
 ## Audience & Communication
+
+  - The main audience is the people who are interested in such data for personal purposes, investigation or plain criosity.
 
 <!--
   - who are you communicating your results to
