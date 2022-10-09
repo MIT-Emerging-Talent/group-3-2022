@@ -12,7 +12,8 @@ We want to generate a website that showcase our abilities in code programming us
 
   - The main data is the value of the unites provided by the official uruguayan central bank, that is posted daily from monday to friday since the year 2002. 
   - Will use the NumPy library to code the linear regression of that data and make estimates on how is going to  behave into the future. 
-  - Will use Flask framework in order to create the website enviroment
+  - Will use Flask framework in order to create the website enviroment.
+  - Ideally we should also create an algorithm that pulls the informations posted daily from the goverment website and automatically updates ours. 
 
 <!--
   - define domain of your project
