@@ -1,7 +1,7 @@
+from pathlib import Path
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from os import path
-
 
 db = SQLAlchemy()
 DB_NAME = "database.db"
@@ -20,11 +20,8 @@ def create_app():
     
     from .models import User, Note
     
-    create_database(app)
+    ##This prompts the creation of a database within the project folder
+    with app.app_context():
+        db.create_all()
     
     return app
-
-def create_database(app):
-    if not path.exist('website/' + DB_NAME):
-        db.create_all(app=app)
-        print('created Database!')

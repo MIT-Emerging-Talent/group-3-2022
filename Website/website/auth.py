@@ -1,1 +1,19 @@
-from flask import Blueprint, render_template, request, flashauth = Blueprint('auth',__name__)@auth.route('/login', methods=['GET', 'POST'])def login():    user_data = request.form    print(user_data)    return render_template("login.html", boolean=True)### You can add variables and set up values at the above by stating### for example return render_template("login.html", text = "Testin")### You will need to add the variable into the template you are### aiming by using {{ text }} within the block so ### it will show on the respective page you are modifying. ### Basically lets you use those values inside the template. @auth.route('/logout')def logout():    return "<p> Logout </p>"@auth.route('/signin', methods=['GET', 'POST'])def signin():    if request.method == 'POST':        email = request.form.get('email')        firstName = request.form.get('firstName')        password1 = request.form.get('password1')        password2 = request.form.get('password2')                if len(email) < 4:            flash('Email must be greater that 4 characters.', category='Error')        elif len(firstName) < 2:            flash('First name must be greater that 1 character.', category='Error')        elif password1 != password2:            flash('EPassword don\'t match', category='Error')        elif len(password1) < 5:            flash('Passwords must be at least 5 characters.', category='Error')        else:           flash('Account created', category='success')                      return render_template("signin.html")@auth.route('/data_uiuy')def data_uiuy():    return "<p> Data unidades indexadas uruguay </p>"
+from flask import Blueprint, render_template, request, flash, redirect, url_for
+from . import db
+
+
+auth = Blueprint('auth',__name__)
+
+
+@auth.route('/data')
+def data():
+    return render_template("data.html", boolean=True)
+
+@auth.route('/information')
+def information():
+    return render_template("information.html", boolean=True)
+
+@auth.route('/logout')
+def logout():
+    return "<p> Logout </p>"
+
