@@ -12,14 +12,14 @@ X_test_full = pd.read_csv('test.csv', index_col = 'ID')
 y = X_full.Value
 feature = ['Date']
 
-# independent varibale
+# independent variable
 X = X_full[feature].copy()
 X_test = X_test_full[feature].copy()
 
 # Break off validation set from training data
 X_train, X_valid, y_train, y_valid = train_test_split(X, y, train_size=0.8, test_size=0.2,
                                                       random_state=0)
-print("Our random Trainnig data picked by algorithm: ")
+print("Our random Training data picked by algorithm: ")
 print(X_train.head())
 # Importing our Algorithm
 from sklearn.ensemble import RandomForestRegressor
@@ -43,7 +43,7 @@ def score_model(model, X_t=X_train, X_v=X_valid, y_t=y_train, y_v=y_valid):
     preds = model.predict(X_v)
     return mean_absolute_error(y_v, preds)
 
-print("\nSocre of every Model: ")
+print("\nScore of every Model: ")
 for i in range(0, len(models)):
     mae = score_model(models[i])
     print("\nModel %d MAE: %d\n" % (i+1, mae))
